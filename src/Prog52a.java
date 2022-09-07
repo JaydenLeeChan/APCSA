@@ -17,3 +17,4 @@ public class Prog52a {
 Area = 11726
 Perim = 450
  */
+
