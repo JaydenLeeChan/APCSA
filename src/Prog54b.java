@@ -12,7 +12,13 @@ public class Prog54b {
         System.out.println("The sum of the four numbers is " + sum);
         System.out.println("The average of the four numbers is " + avg);
 
+/*
+The sum of the four numbers is 2227
+The average of the four numbers is 556.75
 
+Process finished with exit code 0
+
+ */
 
 
     }
