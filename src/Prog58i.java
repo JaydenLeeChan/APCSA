@@ -19,5 +19,18 @@ public class Prog58i {
         System.out.printf("My monthly payments will be $%.2f\n", mp);
         System.out.printf("The total interest paid is $%.2f\n", mp * m);
         System.out.printf("The total amount paid is $%.2f\n", ((mp * m) +p));
+/*
+The amount I wish to borrow is $
+10000000
+The loan rate is
+5
+The number of months it will take me to pay off the loan is
+10
+My monthly payments will be $46247.23
+The total interest paid is $462472.32
+The total amount paid is $10462472.32
+
+Process finished with exit code 0
+ */
     }
 }
