@@ -8,7 +8,6 @@ public class Prog88a {
         // Enter number 1-13
         // Enter number 2-28
 
-
         int num1 = (int) (Math.random() * (13-1)) + 1;
         int num2 = (int) (Math.random() * (20-2)) + 2;
 
@@ -17,6 +16,7 @@ public class Prog88a {
         int sum = num1 + num2;
         int dif = num1 - num2;
         int prod = num1 * num2;
+
         double avg = sum / 2.0;
 
         System.out.println("Sum = " + sum);
@@ -24,6 +24,7 @@ public class Prog88a {
         System.out.println("Product = " + prod);
         System.out.println("Average = " + avg);
         System.out.println("Absolute Value = " + Math.abs(dif));
+
         int max;
 
         if (num1 > num2) {
@@ -39,22 +40,22 @@ public class Prog88a {
         } else {
             min = num1;
         }
-
+        System.out.println("Maximum = " + max);
+        System.out.println("Minimum = " + min);
 
 
 
     }
 }
 /*
-        Enter number 1-13
-        Enter number 2-20
-        Original numbers are 13 and 20
-        Sum =	33
-        Difference =	-7
-        Product =	260
-        Average =	 16.5
-        Absolute value =	7
-        Maximum =	20
-        Minimum =	13
+Original Numbers are 9 and 11
+Sum = 20
+Difference = -2
+Product = 99
+Average = 10.0
+Absolute Value = 2
+Maximum = 11
+Minimum = 9
 
-         */
+Process finished with exit code 0
+*/
