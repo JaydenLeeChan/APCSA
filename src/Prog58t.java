@@ -14,11 +14,11 @@ public class Prog58t {
 
         double c = r - pp;
 
-        int dl = c*100/100;
-        int qu = c*100/25;
-        int di = c*100/10;
-        int ni = c*100/5;
-        int pe = c*100/1;
+        int dl = (int) c*100/100;
+        int qu = (int) c*100/25;
+        int di = (int) c*100/10;
+        int ni = (int) c*100/5;
+        int pe = (int) c*100/1;
 
         System.out.println(dl);
 
