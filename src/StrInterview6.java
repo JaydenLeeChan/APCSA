@@ -39,6 +39,171 @@ public class StrInterview6 {
             if (cur == 'a') {
                 Acount++;
             }
+            if (cur == 'b') {
+                Bcount++;
+            }
+            if (cur == 'c') {
+                Ccount++;
+            }
+            if (cur == 'd') {
+                Dcount++;
+            }
+            if (cur == 'e') {
+                Ecount++;
+            }
+            if (cur == 'f') {
+                Fcount++;
+            }
+            if (cur == 'g') {
+                Gcount++;
+            }
+            if (cur == 'h') {
+                Hcount++;
+            }
+            if (cur == 'i') {
+                Icount++;
+            }
+            if (cur == 'j') {
+                Jcount++;
+            }
+            if (cur == 'k') {
+                Kcount++;
+            }
+            if (cur == 'l') {
+                Lcount++;
+            }
+            if (cur == 'm') {
+                Mcount++;
+            }
+            if (cur == 'n') {
+                Ncount++;
+            }
+            if (cur == 'o') {
+                Ocount++;
+            }
+            if (cur == 'p') {
+                Pcount++;
+            }
+            if (cur == 'q') {
+                Qcount++;
+            }
+            if (cur == 'r') {
+                Rcount++;
+            }
+            if (cur == 's') {
+                Scount++;
+            }
+            if (cur == 't') {
+                Tcount++;
+            }
+            if (cur == 'u') {
+                Ucount++;
+            }
+            if (cur == 'v') {
+                Vcount++;
+            }
+            if (cur == 'w') {
+                Wcount++;
+            }
+            if (cur == 'x') {
+                Xcount++;
+            }
+            if (cur == 'y') {
+                Ycount++;
+            }
+            if (cur == 'z') {
+                Zcount++;
+            }
+
+        }
+
+        int chc = 0;
+
+        if (Acount >= 1)  {
+            chc++;
+        }
+        if (Bcount >= 1)  {
+            chc++;
+        }
+        if (Ccount >= 1)  {
+            chc++;
+        }
+        if (Dcount >= 1)  {
+            chc++;
+        }
+        if (Ecount >= 1)  {
+            chc++;
+        }
+        if (Fcount >= 1)  {
+            chc++;
+        }
+        if (Gcount >= 1)  {
+            chc++;
+        }
+        if (Hcount >= 1)  {
+            chc++;
+        }
+        if (Icount >= 1)  {
+            chc++;
+        }
+        if (Jcount >= 1)  {
+            chc++;
+        }
+        if (Kcount >= 1)  {
+            chc++;
+        }
+        if (Lcount >= 1)  {
+            chc++;
+        }
+        if (Mcount >= 1)  {
+            chc++;
+        }
+        if (Ncount >= 1)  {
+            chc++;
+        }
+        if (Ocount >= 1)  {
+            chc++;
+        }
+        if (Pcount >= 1)  {
+            chc++;
+        }
+        if (Qcount >= 1)  {
+            chc++;
+        }
+        if (Rcount >= 1)  {
+            chc++;
+        }
+        if (Scount >= 1)  {
+            chc++;
+        }
+        if (Tcount >= 1)  {
+            chc++;
+        }
+        if (Ucount >= 1)  {
+            chc++;
+        }
+        if (Vcount >= 1)  {
+            chc++;
+        }
+        if (Wcount >= 1)  {
+            chc++;
+        }
+        if (Xcount >= 1)  {
+            chc++;
+        }
+        if (Ycount >= 1)  {
+            chc++;
+        }
+        if (Zcount >= 1)  {
+            chc++;
+        }
+        System.out.println("Characters: " + chc);
 
     }
 }
+/*
+Enter a string: banana
+Characters: 3
+
+Process finished with exit code 0
+ */
