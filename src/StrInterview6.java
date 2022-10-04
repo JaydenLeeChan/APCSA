@@ -114,6 +114,54 @@ public class StrInterview6 {
             if (cur == 'z') {
                 Zcount++;
             }
+            if (cur == 'b') {
+                Bcount++;
+            }
+            if (cur == 'c') {
+                Ccount++;
+            }
+            if (cur == 'd') {
+                Dcount++;
+            }
+            if (cur == 'e') {
+                Ecount++;
+            }
+            if (cur == 'f') {
+                Fcount++;
+            }
+            if (cur == 'a') {
+                Acount++;
+            }
+            if (cur == 'a') {
+                Acount++;
+            }
+            if (cur == 'a') {
+                Acount++;
+            }
+            if (cur == 'a') {
+                Acount++;
+            }
+            if (cur == 'a') {
+                Acount++;
+            }
+            if (cur == 'a') {
+                Acount++;
+            }
+            if (cur == 'a') {
+                Acount++;
+            }
+            if (cur == 'a') {
+                Acount++;
+            }
+            if (cur == 'a') {
+                Acount++;
+            }
+            if (cur == 'a') {
+                Acount++;
+            }
+            if (cur == 'a') {
+                Acount++;
+            }
 
         }
 
