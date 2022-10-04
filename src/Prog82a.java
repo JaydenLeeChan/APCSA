@@ -17,4 +17,4 @@ Enter the speed limit: 55
 Enter the vehicle speed: 70
 Fine-----------------------$95.0
 Process finished with exit code 0
- */
+*/
