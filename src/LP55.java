@@ -15,3 +15,11 @@ public class LP55 {
         }
     }
 }
+/*
+Enter a positive integer: 546
+5
+4
+6
+
+Process finished with exit code 0
+ */
