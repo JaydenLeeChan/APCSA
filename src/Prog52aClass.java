@@ -18,10 +18,12 @@ public class Prog52aClass {
 
         wow.setStuff();
 
-        int area = wow.getArea();
-        int perim = wow.getPerim();
+        //int area = wow.getArea();
+        //int perim = wow.getPerim();
 
-        System.out.println("Area: " + area);
-        System.out.println("Perim: " + perim);
+        //System.out.println("Area: " + area);
+        //System.out.println("Perim: " + perim);
+
+        wow.print();
     }
 }
