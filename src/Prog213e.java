@@ -37,3 +37,15 @@ public class Prog213e {
         }
     }
 }
+/*
+Langner Family
+Age  Group    Distribution    Percentage
+<20    3    0.17647058823529413
+20-39    4    0.23529411764705882
+40-59    5    0.29411764705882354
+60-79    3    0.17647058823529413
+>70    2    0.11764705882352941
+
+Process finished with exit code 0
+
+ */
