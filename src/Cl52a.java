@@ -12,6 +12,7 @@ public class Cl52a {
      * @param l length
      * @param w width
      */
+    //Constructor: Sets private data
     public Cl52a(int l, int w) {
         myLen = l;
         myWid = w;
