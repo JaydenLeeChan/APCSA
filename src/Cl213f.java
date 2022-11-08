@@ -1,34 +1,38 @@
 public class Cl213f {
     //Private Data (fields)
-    private int mykwh;
-    private int money;
+    private double mykwh;
+    private int myCost;
 
     //Constructor
 
-    public Cl213f(int kwh) {
+    public Cl213f(double kwh) {
         mykwh = kwh;
-        money = 0;
+        myCost = 0;
     }
 
     //Mutator: Modifies private data
-    public void setStuff() {
+    public void calc() {
 
         if (mykwh > 0 && mykwh < 2000) {
-            money += mykwh * 7;
+            myCost += mykwh * 7;
         }
         if (mykwh > 2000) {
-            money += 2000 * 7;
+            myCost += 2000 * 7;
         }
         if (mykwh > 10000) {
-            money += 8000 * 5;
-            money += (mykwh - 10000) * 4;
+            myCost += 8000 * 5;
+            myCost += (mykwh - 10000) * 4;
         }
 
 
     }
     //Accessor
     public int getMoney() {
-        return money;
+        return myCost;
+    }
+
+    public String toString() {
+        return "The number of ";
     }
 }
 

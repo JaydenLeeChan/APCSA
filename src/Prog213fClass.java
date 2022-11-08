@@ -9,7 +9,7 @@ public class Prog213fClass {
             while(input.hasNext()) {
                 Cl213f ok = new Cl213f(input.nextInt());
 
-                ok.setStuff();
+                ok.calc();
                 System.out.println(ok.getMoney()/100.0);
 
             }
