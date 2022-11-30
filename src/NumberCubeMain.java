@@ -30,7 +30,7 @@ public class NumberCubeMain {
         if (curr > max) {
 
             max = curr;
-            maxIndex = values.length = curr;
+            maxIndex = values.length;
 
         }
         return maxIndex;
