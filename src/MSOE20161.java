@@ -8,7 +8,7 @@ public class MSOE20161 {
         boolean ok = true;
         boolean bok = true;
         for (int lcv = 0; lcv <= bruh.length()/2; lcv++) {
-            if (!(bruh.substring(lcv).equals(bruh.substring(bruh.length()-1-lcv)))) {
+            if (!(bruh.substring(lcv, lcv + 1).equals(bruh.substring(bruh.length() - 1 - lcv, bruh.length() - lcv)))) {
                 ok = false;
                 lcv = 999999;
             }
