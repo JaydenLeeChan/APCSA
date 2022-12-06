@@ -18,3 +18,10 @@ public class MSOE20161 {
         if (ok == false) System.out.println("Your word is not palindrome.");
     }
 }
+/*
+What is your word?
+aba
+Your word is a palindrome.
+
+Process finished with exit code 0
+ */
