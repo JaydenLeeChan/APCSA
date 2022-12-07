@@ -29,3 +29,14 @@ public class MSOE20163 {
 
     }
 }
+/*
+What is R1?
+1
+What is R2?
+-1
+What is the lens thickness(d)?
+2
+What is the refractive index(n)?
+2
+The focal length is 1.0
+ */
