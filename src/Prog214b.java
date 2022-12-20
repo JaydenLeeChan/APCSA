@@ -7,6 +7,7 @@ public class Prog214b {
         try {
             Scanner input = new Scanner(new File("data/prog214b.dat"));
             //Put code here
+
             while (input.hasNextLine()) {
                 double empnum = input.nextDouble();
                 double ytdpay = input.nextDouble();
@@ -14,35 +15,9 @@ public class Prog214b {
                 double shiftfactor = input.nextDouble();
                 double hoursworked = input.nextDouble();
 
-                double grosspay = hoursworked * basepayrate * shiftfactor;
+                Cl214b bruh = new Cl214b(empnum, ytdpay, basepayrate, shiftfactor, hoursworked);
 
-                double taxrate = 0.0;
-                if (grosspay < 100) taxrate = 0.0;
-                else if (grosspay < 150) taxrate = 0.08;
-                else if (grosspay < 200) taxrate = 0.12;
-                else if (grosspay < 300) taxrate = 0.15;
-                else taxrate = 0.175;
-
-                double withholdtax = grosspay * taxrate;
-
-                double ficatax = 0;
-                if (ytdpay > 17300) ficatax = 0;
-                if (ytdpay <= 17300) ficatax = 0.0605 * grosspay;
-                if (ytdpay < 17300 && ytdpay + grosspay > 17300) ficatax = 0.0605 * (ytdpay + grosspay - 17300);
-
-                double netpay = grosspay - withholdtax - ficatax;
-
-                System.out.println("Employee Number: " + (int) empnum);
-                System.out.println("Hours: " + hoursworked);
-                System.out.println("Rate: $" + basepayrate);
-                System.out.println("Shift Factor: " + shiftfactor);
-                System.out.println("YTD Pay: $" + ytdpay);
-                System.out.println("Gross Pay: $" + grosspay);
-                System.out.println("Withholding Tax: $" + withholdtax);
-                System.out.println("FICA Tax: $" + ficatax);
-                System.out.println("Net Pay: $" + empnum);
-                System.out.println();
-                System.out.println();
+                bruh.outputthestuff();
 
             }
 

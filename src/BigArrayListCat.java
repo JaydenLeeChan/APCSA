@@ -22,7 +22,6 @@ public class BigArrayListCat {
             Scanner input = new Scanner(new File("data/bigarraylist.dat"));
             //Put code here
             int numCats = input.nextInt();
-            ;
             input.nextLine();
             ArrayList<Cat> cats = new ArrayList<Cat>();
 
