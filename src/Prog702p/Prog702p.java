@@ -35,32 +35,35 @@ public class Prog702p {
                 num = input.nextInt();
             }
 
-            double tot = 0;
-            int cnt = 0;
-            int totstus = 0;
+            double totHiccasWorth = 0;
+            int hiccasCnt = 0;
+            double totWalliesSteps = 0;
+            int walliesCnt = 0;
+            double totBeepersLength = 0;
+            int beepersCnt = 0;
             String large = "";
             String sm = "a;ldk fj;lsadfjlk;asd jflk;asdjfl;kajsdl;kf jas;ldjfasl;k jf;lasd jfl;sdakfj asld; fdslfj as;ldf dsa;l jfkl;asdj fl;ja jlkk ;jl k;kl ;j ;jk ;klj jksadljldjs;ak ;fdsa ;jkjk fnk jsa kdj;fadsk j;kfsakjd;jk fa ;ldjsjkf;jkl asd jl;f ;kasdjl fk;aj ks;d jk;f; jksj;k n ;jdkls fjksad;; jfkks ;djdfls akjlasd;lfja;ls jfl;ksad jf;laks jf;lsksa jf;lkfjd;aslkfja;slk dfja;skdfj ;alskdfj a;lskdfj a;lsk dfja;sldkj a;lskdfj ;asl dfkjas;ldkf jla;skdfj ;laksdjf;lkasdfj l;ak jsdfl;askdfj laskdfj l;askdfj la;sdkfj ;laskdfj ;laskdj f;askd fjas;ldkf j;asdk fjas;ldkfj as;lkfj sadl;kfj asdl;kfj sadk; fjlasl;kdsj fasl;kdfj as;ldkfj a;lsd fk;al skdf;al skdfj;a lskdfa;s ldfjka;slkdf ja;slk fja;lskdfj ;alskdfja;lsdkfj a;sl kdfa;lskfj a;lskdfj a;sldkfj as;ldkfj a;lskdf a;skdjf kl;asd;alskdjf;alskdfja;lsdkfj;alsdkfjal;sdkfjkfjdflsaj;lasdjk;l s ;;jj j ;kjk ;ljk ;ljkl  ;jjk;;jk lj  jkjk ;jj ;lkljkjjkl  ;lk lj;sad lfk;sad;fklsd fasdlf;k jsadl;kfj dsa;lf jdsal;f jkasdl ;fj fjsda fjal;s jfklsd;aj fl;sakjd fkl;adsflk;asjdf lsadjf kl;sadj flksdaj fl;kasdj fl;kasdfj ;lkas dfjal;sdkfj a;lsdfjk l;asdfjk;laksdfj ;lkasdfj ;lk asfjl;k fs;aldkj ;laks dfj;alsdkfj ;asd kfja;sldkfj ;asldkfj asd;lf as;dlkfj ";
             for (Animal x : list) {
-                if (x instanceof Student) {
-                    tot += ((Student)x).getGPA();
-                    cnt++;
+                if (x instanceof Hiccas) {
+                    totHiccasWorth += ((Hiccas)x).getMyWorth();
+                    hiccasCnt++;
                 }
-                if (x instanceof Teacher) {
-                    totstus += ((Teacher)x).getMyNumStuds();
+                if (x instanceof Wallies) {
+                    totWalliesSteps += ((Wallies)x).getMySteps();
+                    walliesCnt++;
                 }
-                if (x instanceof Admin) {
-                    String xstring = ((Admin)x).getFavw();
-                    if (xstring.length() > large.length())
-                        large = xstring;
-                    if (xstring.length() < sm.length())
-                        sm = xstring;
+                if (x instanceof Beepers) {
+                    String xstring = ((Beepers)x).getMyExWord();
+                    totBeepersLength += xstring.length();
+                    beepersCnt++;
                 }
             }
+            //The average number of steps taken by the Wallies is:  63.2
+            //The average size of the Beepers words is:  7.25
+            System.out.println("The average value of the Hicca fur is: " + String.format("%.2f", (totHiccasWorth/hiccasCnt)));
+            System.out.println("The average number of steps taken by the Wallies is: " + String.format("%.2f", (totWalliesSteps/walliesCnt)));
+            System.out.println("The average size of the Beepers words is: " + String.format("%.2f", (totBeepersLength/beepersCnt)));
 
-            System.out.println("Average student GPA: " + String.format("%.2f", (tot/cnt)));
-            System.out.println("Total number of students taught by teachers: " + totstus);
-            System.out.println("Smallest favorite admin word: " + sm);
-            System.out.println("Largest favorite admin word: " + large);
         }
         catch (IOException e) {
             System.out.println("Can't find data file!");
