@@ -57,6 +57,7 @@ public class Prog875c {
 
             // Align human genes
             System.out.println("Human primary/Human alternate");
+            int hhp = hprimary.align(halternate, mismatchPenalty, gapPenalty);
 
             // Align human genes with chimp
             System.out.println("\nHuman primary/Chimp");

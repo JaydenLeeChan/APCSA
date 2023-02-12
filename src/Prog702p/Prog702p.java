@@ -35,6 +35,7 @@ public class Prog702p {
                 num = input.nextInt();
             }
 
+            String allBeeperWords = "";
             double totHiccasWorth = 0;
             int hiccasCnt = 0;
             double totWalliesSteps = 0;
@@ -54,16 +55,43 @@ public class Prog702p {
                 }
                 if (x instanceof Beepers) {
                     String xstring = ((Beepers)x).getMyExWord();
+                    allBeeperWords = allBeeperWords + xstring;
                     totBeepersLength += xstring.length();
                     beepersCnt++;
                 }
             }
+
+            String allBeeperWordsCaps = allBeeperWords.toUpperCase();
+            String ab = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            int[] count = new int[26];
+
+            for (int lcv = 0; lcv < allBeeperWordsCaps.length(); lcv++) {
+                for (int lcv2 = 0; lcv2 < ab.length(); lcv2++) {
+                    if (allBeeperWordsCaps.substring(lcv, lcv+1).equals(ab.substring(lcv2, lcv2+1)))
+                        count[lcv2]++;
+                }
+            }
+
+            int max = count[0];
+            int maxID = 0;
+            for (int lcv = 1; lcv < count.length; lcv++) {
+                if (count[lcv] > max) {
+                    max = count[lcv];
+                    maxID = lcv;
+                }
+            }
+
             //The average number of steps taken by the Wallies is:  63.2
             //The average size of the Beepers words is:  7.25
             System.out.println("The average value of the Hicca fur is: " + String.format("%.2f", (totHiccasWorth/hiccasCnt)));
             System.out.println("The average number of steps taken by the Wallies is: " + String.format("%.2f", (totWalliesSteps/walliesCnt)));
             System.out.println("The average size of the Beepers words is: " + String.format("%.2f", (totBeepersLength/beepersCnt)));
-
+            System.out.print("The most common letter in all the Beepers' words is: ");
+            for (int k = 0; k < ab.length(); k++) {
+                if (count[k] == max) {
+                    System.out.print(ab.substring(k,k+1) + " ");
+                }
+            }
         }
         catch (IOException e) {
             System.out.println("Can't find data file!");
