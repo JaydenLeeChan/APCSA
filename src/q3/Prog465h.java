@@ -10,14 +10,7 @@ public class Prog465h {
         try {
             Scanner input = new Scanner(new File("data/prog465h.dat"));
             //Put code here
-            while(input.hasNextLine()) {
-                int rowNum = input.nextInt();
-                int colNum = input.nextInt();
-                while(input.nextLine().length() > 1) {
-                    int[][] matrix = new int[]
 
-                }
-            }
         }
         catch (IOException e) {
             System.out.println("Can't find data file!");
