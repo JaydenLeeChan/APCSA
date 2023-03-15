@@ -87,3 +87,16 @@ public class Prog702q {
         }
     }
 }
+
+/*
+Total Vehicles: 13
+Total Worth of All Cars: $33950.0
+Total Worth of All Vehicles $428199.75
+Longest Home Destination Name: GreenBay
+Truck With the Least Value: Softy
+Total Car Tires: 15
+Total Truck Tires: 95
+Total Bus Tires: 69
+
+Process finished with exit code 0
+ */
