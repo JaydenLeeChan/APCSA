@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/ActivityStarterCode/Activity10StarterCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/ActivityStarterCode/Activity11StarterCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/ActivityStarterCode/Activity5StarterCode/Buggy1" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/ActivityStarterCode/Activity5StarterCode/Buggy2" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/ActivityStarterCode/Activity5StarterCode/Buggy3" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/ActivityStarterCode/Activity5StarterCode/Buggy4" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/ActivityStarterCode/Activity5StarterCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/ActivityStarterCode/Activity6StarterCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/ActivityStarterCode/Activity7StarterCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/ActivityStarterCode/Activity8StarterCode" includeSubdirectories="true" />
+    </excludeFromCompile>
+  </component>
+</project>
