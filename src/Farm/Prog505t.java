@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.*;
 
 
-public class Prog505w {
+public class Prog505t {
     public static void main(String[] args) {
         try {
             Scanner input = new Scanner(new File("data/prog505w.dat"));
@@ -16,6 +16,7 @@ public class Prog505w {
             double hayCost = input.nextDouble();
             int corn = input.nextInt();
             double cornCost = input.nextDouble();
+            Farm bruh = new Farm(hay, corn, hayCost, cornCost);
 
             int cowRows = input.nextInt();
             int cowPens = input.nextInt();
@@ -64,6 +65,8 @@ public class Prog505w {
             }
             System.out.println("Income of the day: " + Income);
 
+
+
             double Weight = 0;
             for (int lcv = 0; lcv < animals.size(); lcv++) {
                 Weight += animals.get(lcv).getMyWeight();
@@ -79,35 +82,104 @@ public class Prog505w {
             }
             if (balesNeeded > hay) {
                 System.out.println("There is enough food");
+                bruh.feedAllAnimals();
+                System.out.println("Haybales: " + bruh.getMyHayBales());
+                System.out.println("Corn cobs: " + bruh.getMyCorn());
             }
+            System.out.println("Cost of feeding: " + balesNeeded*hayCost);
 
-            double minHorse = Double.MAX_VALUE;
-            int minHorseIndex = 0;
+            double minHorse2 = Double.MAX_VALUE;
+            int minHorseIndex2 = 0;
             for (int lcv = 0; lcv < animals.size(); lcv++) {
                 if  (animals.get(lcv) instanceof Horse) {
                     Horse horse = (Horse) animals.get(lcv);
-                    if (horse.value(cornCost, hayCost) < minHorse) {
-                        minHorse = horse.value(cornCost, hayCost);
-                        minHorseIndex = lcv;
+                    if (horse.value(cornCost, hayCost) < minHorse2) {
+                        minHorse2 = horse.value(cornCost, hayCost);
+                        minHorseIndex2 = lcv;
                     }
                 }
             }
+            animals.remove(minHorseIndex2);
+            double minHorse1 = Double.MAX_VALUE;
+            int minHorseIndex1 = 0;
+            for (int lcv = 0; lcv < animals.size(); lcv++) {
+                if  (animals.get(lcv) instanceof Horse) {
+                    Horse horse = (Horse) animals.get(lcv);
+                    if (horse.value(cornCost, hayCost) < minHorse1) {
+                        minHorse1 = horse.value(cornCost, hayCost);
+                        minHorseIndex1 = lcv;
+                    }
+                }
+            }
+            animals.remove(minHorseIndex1);
 
-            System.out.printf("Horse %s makes the least money\n", animals.get(minHorseIndex).getName());
 
-            double maxCow = 0.0;
-            int maxCowIndex = 0;
+
+
+            double minCow1 = Double.MAX_VALUE;
+            int minCowIndex1 = 0;
             for (int lcv = 0; lcv < animals.size(); lcv++) {
                 if  (animals.get(lcv) instanceof Cow) {
                     Cow cow = (Cow) animals.get(lcv);
-                    if (cow.value(cornCost, hayCost) > maxCow) {
-                        maxCow = cow.value(cornCost, hayCost);
-                        maxCowIndex = lcv;
+                    if (cow.value(cornCost, hayCost) < minCow1) {
+                        minCow1 = cow.value(cornCost, hayCost);
+                        minCowIndex1 = lcv;
                     }
                 }
             }
+            animals.remove(minCowIndex1);
+            double minCow2 = Double.MAX_VALUE;
+            int minCowIndex2 = 0;
+            for (int lcv = 0; lcv < animals.size(); lcv++) {
+                if  (animals.get(lcv) instanceof Cow) {
+                    Cow cow = (Cow) animals.get(lcv);
+                    if (cow.value(cornCost, hayCost) < minCow2) {
+                        minCow2 = cow.value(cornCost, hayCost);
+                        minCowIndex2 = lcv;
+                    }
+                }
+            }
+            animals.remove(minCowIndex2);
+            double minCow3 = Double.MAX_VALUE;
+            int minCowIndex3 = 0;
+            for (int lcv = 0; lcv < animals.size(); lcv++) {
+                if  (animals.get(lcv) instanceof Cow) {
+                    Cow cow = (Cow) animals.get(lcv);
+                    if (cow.value(cornCost, hayCost) < minCow3) {
+                        minCow3 = cow.value(cornCost, hayCost);
+                        minCowIndex3 = lcv;
+                    }
+                }
+            }
+            animals.remove(minCowIndex3);
 
-            System.out.printf("Cow %s makes the least money\n", animals.get(maxCowIndex).getName());
+
+            for (int lcv = 0; lcv < animals.size(); lcv++) {
+                if (animals.get(lcv) instanceof Cow) {
+                    animals.get(lcv).setMyWeight(1250);
+                    ((Cow) animals.get(lcv)).setMyMilk(80);
+                    animals.get(lcv).setMyNumHayBales(3);
+                    animals.get(lcv).setMyNumCorn( 4);
+
+
+                }
+            }
+            int numcow = 0;
+            int numhorse = 0;
+            for (int lcv = 0; lcv < animals.size(); lcv++) {
+                if (animals.get(lcv) instanceof Horse) {
+                    numhorse++;
+                }
+                if (animals.get(lcv) instanceof Cow) {
+                    Cow cow = (Cow) animals.get(lcv);
+                    numcow++;
+                }
+            }
+            System.out.println("Cow: " + numcow + "Horse: " + numhorse);
+
+
+
+
 
         }
         catch (IOException e) {
@@ -119,8 +191,7 @@ public class Prog505w {
 Income of the day: 190.0
 Cumulative weight: 32790.0
 There is not enough food
-Horse JohnJohn makes the least money
-Cow Barb makes the least money
+Cost of feeding: 139.5
+Cow: 9Horse: 10
 
-Process finished with exit code 0
  */
