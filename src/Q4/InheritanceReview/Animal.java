@@ -21,4 +21,7 @@ public class Animal {
     public void speak() {
         System.out.println("Hello there!");
     }
+
+    public int getAge() { return myAge; }
+    public String getName() { return myName; }
 }
